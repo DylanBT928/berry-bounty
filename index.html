@@ -1,5 +1,26 @@
-<HTML>
+<!DOCTYPE html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Berry Bounty</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png?v=1">
   </head>
-</HTML>
+
+  <body>
+    <script src="script.js"></script>
+    <center>
+      <img src="images/berry.png" id="berry" onclick="increment()">
+      <div id="info">
+        <p id="berryCounter">Berries: <span id="showBerries" class="number">0</span></p>
+        <p>Berries Per Second: <span id="showBerriesPerSecond" class="number">0</span></p>
+        <p>Berries Per Click: <span id="showBerriesPerClick" class="number">0</span></p>
+      </div>
+    </center>
+
+
+
+
+  </body>
+</html>
