@@ -12,11 +12,162 @@
         <script src="script.js"></script>
         <center>
             <img src="images/berry.png" id="berry" onclick="increment()">
+            <!-- Statistics -->
             <div id="info">
                 <p id="berryCounter">Berries: <span id="showBerries" class="number">0</span></p>
                 <p>Berries Per Second: <span id="showBerriesPerSecond" class="number">0</span></p>
                 <p>Berries Per Click: <span id="showBerriesPerClick" class="number">0</span></p>
+                <p id="gameOver"></p>
             </div>
+
+            <!-- Crew Bounties -->
+            <div class="itemContainer">
+                <div class="chopper">
+                    <div class="containerImage">
+                        <img src="images/crew/chopper.jpg" class="itemImage" style="width:200px;height:200px;">
+                        <div class="buyButtonContainer">
+                            <button onclick="buyChopper()" class="buyButton">Buy</button>
+                        </div>
+                    </div>
+                    <div class="containerText">
+                        <p>Chopper's Lvl: <span id="chopperNum">0</span></p>
+                        <p>Cost: <span id="chopperCost">10</span></p>
+                        <p>+1 Berries per second</p>
+                    </div>
+                </div>
+
+                <div class="nami">
+                    <div class="containerImage">
+                        <img src="images/crew/nami.jpg" class="itemImage" style="width:100px;height:170px;">
+                        <div class="buyButtonContainer">
+                            <button onclick="buyNami()" class="buyButton">Buy</button>
+                        </div>
+                    </div>
+                    <div class="containerText">
+                        <p>Nami's Lvl: <span id="namiNum">0</span></p></p>
+                        <p>Cost: <span id="namiCost">100</span></p></p>
+                        <p>+10 Berries per second</p>
+                    </div>
+                </div>
+
+                <div class="brook">
+                    <div class="containerImage">
+                        <img src="images/crew/brook.jpg" class="itemImage" style="width:100px;height:170px;">
+                        <div class="buyButtonContainer">
+                            <button onclick="buyBrook()" class="buyButton">Buy</button>
+                        </div>
+                    </div>
+                    <div class="containerText">
+                        <p>Brook's Lvl: <span id="brookNum">0</span></p></p>
+                        <p>Cost: <span id="brookCost">500</span></p></p>
+                        <p>+25 Berries per second</p>
+                    </div>
+                </div>
+
+                <div class="franky">
+                    <div class="containerImage">
+                        <img src="images/crew/franky.jpg" class="itemImage" style="width:100px;height:170px;">
+                        <div class="buyButtonContainer">
+                            <button onclick="buyFranky()" class="buyButton">Buy</button>
+                        </div>
+                    </div>
+                    <div class="containerText">
+                        <p>Franky's Lvl: <span id="frankyNum">0</span></p></p>
+                        <p>Cost: <span id="frankyCost">1,000</span></p></p>
+                        <p>+50 Berries per second</p>
+                    </div>
+                </div>
+
+                <div class="usopp">
+                    <div class="containerImage">
+                        <img src="images/crew/usopp.jpg" class="itemImage" style="width:100px;height:170px;">
+                        <div class="buyButtonContainer">
+                            <button onclick="buyUsopp()" class="buyButton">Buy</button>
+                        </div>
+                    </div>
+                    <div class="containerText">
+                        <p>Usopp's Lvl: <span id="usoppNum">0</span></p></p>
+                        <p>Cost: <span id="usoppCost">10,000</span></p></p>
+                        <p>+100 Berries per second</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="itemContainer">
+                <div class="robin">
+                    <div class="containerImage">
+                        <img src="images/crew/robin.jpg" class="itemImage" style="width:100px;height:170px;">
+                        <div class="buyButtonContainer">
+                            <button onclick="buyRobin()" class="buyButton">Buy</button>
+                        </div>
+                    </div>
+                    <div class="containerText">
+                        <p>Robin's Lvl: <span id="robinNum">0</span></p></p>
+                        <p>Cost: <span id="robinCost">50,000</span></p></p>
+                        <p>+1,000 Berries per second</p>
+                    </div>
+                </div>
+
+                <div class="sanji">
+                    <div class="containerImage">
+                        <img src="images/crew/sanji.jpg" class="itemImage" style="width:100px;height:170px;">
+                        <div class="buyButtonContainer">
+                            <button onclick="buySanji()" class="buyButton">Buy</button>
+                        </div>
+                    </div>
+                    <div class="containerText">
+                        <p>Sanji's Lvl: <span id="sanjiNum">0</span></p></p>
+                        <p>Cost: <span id="sanjiCost">100,000</span></p></p>
+                        <p>+10,000 Berries per second</p>
+                    </div>
+                </div>
+
+                <div class="jinbe">
+                    <div class="containerImage">
+                        <img src="images/crew/jinbe.jpg" class="itemImage" style="width:100px;height:170px;">
+                        <div class="buyButtonContainer">
+                            <button onclick="buyJinbe()" class="buyButton">Buy</button>
+                        </div>
+                    </div>
+                    <div class="containerText">
+                        <p>Jinbe's Lvl: <span id="jinbeNum">0</span></p></p>
+                        <p>Cost: <span id="jinbeCost">1,000,000</span></p></p>
+                        <p>+25,000 Berries per second</p>
+                    </div>
+                </div>
+
+                <div class="zoro">
+                    <div class="containerImage">
+                        <img src="images/crew/zoro.jpg" class="itemImage" style="width:100px;height:170px;">
+                        <div class="buyButtonContainer">
+                            <button onclick="buyZoro()" class="buyButton">Buy</button>
+                        </div>
+                    </div>
+                    <div class="containerText">
+                        <p>Zoro's Lvl: <span id="zoroNum">0</span></p></p>
+                        <p>Cost: <span id="zoroCost">10,000,000</span></p></p>
+                        <p>+50,000 Berries per second</p>
+                    </div>
+                </div>
+
+                <div class="luffy">
+                    <div class="containerImage">
+                        <img src="images/crew/luffy.jpg" class="itemImage" style="width:100px;height:170px;">
+                        <div class="buyButtonContainer">
+                            <button onclick="buyLuffy()" class="buyButton">Buy</button>
+                        </div>
+                    </div>
+                    <div class="containerText">
+                        <p>Luffy's Lvl: <span id="luffyNum">0</span></p></p>
+                        <p>Cost: <span id="luffyCost">1,000,000,000</span></p></p>
+                        <p>+100,000,000 Berries per second</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+
         </center>
 
 
