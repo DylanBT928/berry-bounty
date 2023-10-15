@@ -1,11 +1,11 @@
 ranked by bounties (least --> greatest)
 - chopper
 - nami
-- brook n
-- franky n
+- brook
+- franky
 - usopp
-- robin n
-- sanji n
-- jinbe n 
+- robin
+- sanji
+- jinbe
 - zoro
 - luffy
