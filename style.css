@@ -1,0 +1,101 @@
+body, html {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #F5F5DC;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#berry {
+    width: 300px;
+    height: 300px;
+    margin-top: 40px;
+    box-shadow: 0 4px 8px 0 #454545;
+    border-radius: 70px;
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+
+#berry:hover {
+    box-shadow: 0 4px 6px 0 #989898;
+    border-radius: 80px;
+    transition-duration: 0.4s;
+}
+
+#berry:active {
+    box-shadow: 0 4px 6px 0 #444444;
+    border-radius: 100px;
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+#info {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    font-size: 20px;
+}
+
+#berryCounter {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.number {
+    color: #925300;
+}
+
+#gameOver {
+    font-size: 30px;
+    color: #925300;
+    font-style: italic;
+}
+
+.itemContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.member {
+    padding: 20px;
+    flex: 20%;
+}
+
+.memberImage {
+    width: 20%;
+    height: 20%;
+}
+
+.containerText {
+    font-size: 16px;
+    text-align: center;
+}
+
+.buyButtonContainer {
+    margin-top: 15px;
+}
+
+.buyButton {
+    cursor: pointer;
+    text-align: center;
+    background: #d8d8d8;
+    color: #333333;
+    font-size: 17px;
+    font-family: fantasy;
+    padding-left: 11px;
+	padding-right: 11px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	border-radius: 50px;
+}
+
+.buyButton:hover {
+    opacity: 0.8;
+}
+
+@media (max-width: 800px) {
+    .member {
+        flex: 100%;
+    }
+}
