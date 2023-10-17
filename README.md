@@ -3,3 +3,7 @@
 </p>
 
 # Berry Bounty
+
+🏴‍☠️ A clicker game inspired by One Piece
+
+Play: https://dylanbt928.github.io/berry-bounty/
